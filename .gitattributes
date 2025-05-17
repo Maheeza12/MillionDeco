@@ -1,0 +1,5 @@
+# Force LF for all text files
+* text eol=lf
+
+# or if you want to use CRLF (not usually recommended for Node/React apps)
+# * text eol=crlf
