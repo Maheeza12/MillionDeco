@@ -3,8 +3,9 @@ import Address from "../models/Address.js";
 //Add address :  /api/address/add
 export const addAddress = async (req,res)=>{
     try {
-        const { address, userId } = req.body
-        await Address.create({...address, userId})
+        const addressData = req.body;
+        addressData.userId = req.userId;
+        await Address.create(addressData)
         res.json({success: true, message:"Address added successfully"});
         
     } catch (error) {
@@ -16,8 +17,8 @@ export const addAddress = async (req,res)=>{
 //Get address :  /api/address/get
 export const getAddress = async (req,res)=>{
     try {
-        const { userId } = req.body
-        const addresses = await address.find({userId})
+        const userId = req.userId;
+        const addresses = await Address.find({userId})
         res.json({success: true, addresses});
         
     } catch (error) {
