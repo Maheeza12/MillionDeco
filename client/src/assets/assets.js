@@ -1,4 +1,4 @@
-import logo from "/assets/logo.png";
+import logo from "/assets/logo.svg";
 import search_icon from "/assets/search_icon.svg";
 import remove_icon from "/assets/remove_icon.svg";
 import arrow_right_icon_colored from "/assets/arrow_right_icon_colored.svg";
