@@ -34,7 +34,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b-4 border-primary bg-black relative transition-all">
 
     <NavLink to='/' onClick={()=> setOpen(false)}>
-        <img className="h-23" src={assets.logo} alt="logo" />
+        <img className="h-23" src="/logo.png" alt="logo" />
     </NavLink>
 
             {/* Desktop Menu */}
@@ -60,7 +60,7 @@ const NavBar = () => {
                 </button>):
                 (
                     <div className='relative group'>
-                        <img src={assets.profile_icon} className='w-10 cursor-pointer' alt='profile' />
+                        <img src="profile_icon.png" className='w-10 cursor-pointer' alt='profile' />
                         <ul className='hidden group-hover:block absolute top-10 right-0 bg-black shadow border border-gray-800 py-2.5 w-32 rounded-md text-sm z-40'>
                             <li onClick={() => navigate("/my-orders")} className='p-1.5 pl-3 hover:bg-primary/10 cursor-pointer'>My Orders</li>
                             <li onClick={logout} className='p-1.5 pl-3 hover:bg-primary/10 cursor-pointer'>Logout</li>
@@ -115,4 +115,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;
