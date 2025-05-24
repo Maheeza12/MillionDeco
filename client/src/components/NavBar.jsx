@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
 
-const navbar = () => {
+const NavBar = () => {
     const [open, setOpen] = React.useState(false)
     const {user,setUser,setShowUserLogin, navigate, searchQuery, setSearchQuery, getCartCount, axios} =useAppContext()
     
@@ -115,4 +115,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default NavBar
