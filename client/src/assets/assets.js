@@ -1,82 +1,107 @@
+import logo from "/assets/logo.png";
+import search_icon from "/assets/search_icon.svg";
+import remove_icon from "/assets/remove_icon.svg";
+import arrow_right_icon_colored from "/assets/arrow_right_icon_colored.svg";
+import star_icon from "/assets/star_icon.svg";
+import star_dull_icon from "/assets/star_dull_icon.svg";
+import cart_icon from "/assets/cart_icon.svg";
+import nav_cart_icon from "/assets/nav_cart_icon.svg";
+import add_icon from "/assets/add_icon.svg";
+import refresh_icon from "/assets/refresh_icon.svg";
+import product_list_icon from "/assets/product_list_icon.svg";
+import order_icon from "/assets/order_icon.svg";
+import upload_area from "/assets/upload_area.png";
+import profile_icon from "/assets/profile_icon.png";
+import menu_icon from "/assets/menu_icon.svg";
+import delivery_truck_icon from "/assets/delivery_truck_icon.svg";
+import leaf_icon from "/assets/leaf_icon.svg";
+import coin_icon from "/assets/coin_icon.svg";
+import box_icon from "/assets/box_icon.png";
+import trust_icon from "/assets/trust_icon.svg";
+import black_arrow_icon from "/assets/black_arrow_icon.svg";
+import white_arrow_icon from "/assets/white_arrow_icon.svg";
+import main_banner_bg from "/assets/interior-decor.png";
+import main_banner_bg_sm from "/assets/interior_deco_sm.png";
+import bottom_banner_image from "/assets/bottom_banner.png";
+import bottom_banner_image_sm from "/assets/bottom_banner_image_sm.png";
+import add_address_iamge from "/assets/add_address_image.svg";
+import maggi_image from "/assets/maggi_image.png";
+import potato_image_1 from "/assets/potato_image_1.png";
+import potato_image_2 from "/assets/potato_image_2.png";
+import potato_image_3 from "/assets/potato_image_3.png";
+import potato_image_4 from "/assets/potato_image_4.png";
+import tomato_image from "/assets/tomato_image.png";
+import carrot_image from "/assets/carrot_image.png";
+import apple_image from "/assets/apple_image.png";
+import amul_milk_image from "/assets/amul_milk_image.png";
+import coca_cola_image from "/assets/coca_cola_image.png";
+import brown_bread_image from "/assets/brown_bread_image.png";
+import basmati_rice_image from "/assets/basmati_rice_image.png";
+import paneer_image from "/assets/paneer_image.png";
+import orange_image from "/assets/orange_image.png";
+import pepsi_image from "/assets/pepsi_image.png";
+import wheat_flour_image from "/assets/wheat_flour_image.png";
+import cheese_image from "/assets/cheese_image.png";
+import eggs_image from "/assets/eggs_image.png";
+import spinach_image_1 from "/assets/spinach_image_1.png";
+import onion_image_1 from "/assets/onion_image_1.png";
+import banana_image_1 from "/assets/banana_image_1.png";
+import mango_image_1 from "/assets/mango_image_1.png";
+import grapes_image_1 from "/assets/grapes_image_1.png";
+import paneer_image_2 from "/assets/paneer_image_2.png";
+import sprite_image_1 from "/assets/sprite_image_1.png";
+import fanta_image_1 from "/assets/fanta_image_1.png";
+import seven_up_image_1 from "/assets/seven_up_image_1.png";
+import top_ramen_image from "/assets/top_ramen_image.png";
+import knorr_soup_image from "/assets/knorr_soup_image.png";
+import yippee_image from "/assets/yippee_image.png";
+import maggi_oats_image from "/assets/maggi_oats_image.png";
+import butter_croissant_image from "/assets/butter_croissant_image.png";
+import chocolate_cake_image from "/assets/chocolate_cake_image.png";
+import whole_wheat_bread_image from "/assets/whole_wheat_bread_image.png";
+import vanilla_muffins_image from "/assets/vanilla_muffins_image.png";
+import quinoa_image from "/assets/quinoa_image.png";
+import brown_rice_image from "/assets/brown_rice_image.png";
+import barley_image from "/assets/barley_image.png";
+
+import living_room_image from "/assets/living_room_image.png";
+import bedroom_image from "/assets/bedroom_image.png";
+import dining_room_image from "/assets/dining_room_image.png";
+import lighting_image from "/assets/lighting_image.png";
+import wall_art_image from "/assets/wall_art_image.png";
+import accessories_image from "/assets/accessories_image.png";
+import outdoor_image from "/assets/outdoor_image.png";
+
+
 export const assets = {
-  logo: "/assets/logo.png",
-  search_icon: "/assets/search_icon.svg",
-  remove_icon: "/assets/remove_icon.svg",
-  arrow_right_icon_colored: "/assets/arrow_right_icon_colored.svg",
-  star_icon: "/assets/star_icon.svg",
-  star_dull_icon: "/assets/star_dull_icon.svg",
-  cart_icon: "/assets/cart_icon.svg",
-  nav_cart_icon: "/assets/nav_cart_icon.svg",
-  add_icon: "/assets/add_icon.svg",
-  refresh_icon: "/assets/refresh_icon.svg",
-  product_list_icon: "/assets/product_list_icon.svg",
-  order_icon: "/assets/order_icon.svg",
-  upload_area: "/assets/upload_area.png",
-  profile_icon: "/assets/profile_icon.png",
-  menu_icon: "/assets/menu_icon.svg",
-  delivery_truck_icon: "/assets/delivery_truck_icon.svg",
-  leaf_icon: "/assets/leaf_icon.svg",
-  coin_icon: "/assets/coin_icon.svg",
-  trust_icon: "/assets/trust_icon.svg",
-  black_arrow_icon: "/assets/black_arrow_icon.svg",
-  white_arrow_icon: "/assets/white_arrow_icon.svg",
-  main_banner_bg: "/assets/interior-decor.png",
-  main_banner_bg_sm: "/assets/interior_deco_sm.png",
-  bottom_banner_image: "/assets/bottom_banner.png",
-  bottom_banner_image_sm: "/assets/bottom_banner_image_sm.png",
-  add_address_iamge: "/assets/add_address_image.svg",
-  box_icon: "/assets/box_icon.png",
-
-  // Extra product images
-  maggi_image: "/assets/maggi_image.png",
-  potato_image_1: "/assets/potato_image_1.png",
-  potato_image_2: "/assets/potato_image_2.png",
-  potato_image_3: "/assets/potato_image_3.png",
-  potato_image_4: "/assets/potato_image_4.png",
-  tomato_image: "/assets/tomato_image.png",
-  carrot_image: "/assets/carrot_image.png",
-  apple_image: "/assets/apple_image.png",
-  amul_milk_image: "/assets/amul_milk_image.png",
-  coca_cola_image: "/assets/coca_cola_image.png",
-  brown_bread_image: "/assets/brown_bread_image.png",
-  basmati_rice_image: "/assets/basmati_rice_image.png",
-  paneer_image: "/assets/paneer_image.png",
-  orange_image: "/assets/orange_image.png",
-  pepsi_image: "/assets/pepsi_image.png",
-  wheat_flour_image: "/assets/wheat_flour_image.png",
-  cheese_image: "/assets/cheese_image.png",
-  eggs_image: "/assets/eggs_image.png",
-  spinach_image_1: "/assets/spinach_image_1.png",
-  onion_image_1: "/assets/onion_image_1.png",
-  banana_image_1: "/assets/banana_image_1.png",
-  mango_image_1: "/assets/mango_image_1.png",
-  grapes_image_1: "/assets/grapes_image_1.png",
-  paneer_image_2: "/assets/paneer_image_2.png",
-  sprite_image_1: "/assets/sprite_image_1.png",
-  fanta_image_1: "/assets/fanta_image_1.png",
-  seven_up_image_1: "/assets/seven_up_image_1.png",
-  top_ramen_image: "/assets/top_ramen_image.png",
-  knorr_soup_image: "/assets/knorr_soup_image.png",
-  yippee_image: "/assets/yippee_image.png",
-  maggi_oats_image: "/assets/maggi_oats_image.png",
-  butter_croissant_image: "/assets/butter_croissant_image.png",
-  chocolate_cake_image: "/assets/chocolate_cake_image.png",
-  whole_wheat_bread_image: "/assets/whole_wheat_bread_image.png",
-  vanilla_muffins_image: "/assets/vanilla_muffins_image.png",
-  quinoa_image: "/assets/quinoa_image.png",
-  brown_rice_image: "/assets/brown_rice_image.png",
-  barley_image: "/assets/barley_image.png",
-
-  // Decor categories
-  living_room_image: "/assets/living_room_image.png",
-  bedroom_image: "/assets/bedroom_image.png",
-  dining_room_image: "/assets/dining_room_image.png",
-  lighting_image: "/assets/lighting_image.png",
-  wall_art_image: "/assets/wall_art_image.png",
-  accessories_image: "/assets/accessories_image.png",
-  outdoor_image: "/assets/outdoor_image.png"
+  logo,
+  search_icon,
+  remove_icon,
+  arrow_right_icon_colored,
+  star_icon,
+  star_dull_icon,
+  cart_icon,
+  nav_cart_icon,
+  add_icon,
+  refresh_icon,
+  product_list_icon,
+  order_icon,
+  upload_area,
+  profile_icon,
+  menu_icon,
+  delivery_truck_icon,
+  leaf_icon,
+  coin_icon,
+  trust_icon,
+  black_arrow_icon,
+  white_arrow_icon,
+  main_banner_bg,
+  main_banner_bg_sm,
+  bottom_banner_image,
+  bottom_banner_image_sm,
+  add_address_iamge,
+  box_icon,
 };
-
 export const categories = [
   {
     text: "living room",
