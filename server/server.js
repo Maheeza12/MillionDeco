@@ -11,15 +11,14 @@ import cartRouter from './routes/cartRoute.js';
 import addressRouter from './routes/addressRoute.js';
 import orderRouter from './routes/orderRoute.js';
 import { stripeWebhooks } from './controllers/orderController.js';
-
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express();
 const port = process.env.PORT || 4000;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 await connectDB()
 await connectCloudinary()
@@ -33,8 +32,6 @@ app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin: allowedOrigins, credentials: true}));
-app.use(express.static(path.join(__dirname, 'client/build')));
-app.use('/assets', express.static(path.join(__dirname, 'client/src/assets')));
 
 
 app.get('/', (req,res)=> res.send("API is Working"));
@@ -45,9 +42,7 @@ app.use('/api/cart', cartRouter)
 app.use('/api/address', addressRouter)
 app.use('/api/order', orderRouter)
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+app.use('/assets', express.static(path.join(__dirname, 'client/src/assets')));
 
 app.listen(port, ()=>{
     console.log(`Server is running on http://localhost:${port}`)    
